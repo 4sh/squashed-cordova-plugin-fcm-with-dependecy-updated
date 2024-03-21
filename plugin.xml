@@ -88,6 +88,7 @@
 	<!-- IOS CONFIGURATION -->
 	<platform name="ios">
 		<preference name="IOS_FIREBASE_MESSAGING_VERSION" default="~> 7.4.0" />
+		<preference name="IOS_GOOGLE_UTILITIES_VERSION" default="7.11.5" />
 		<config-file target="config.xml" parent="/*">
 			<feature name="FCMPlugin">
 				<param name="ios-package" value="FCMPlugin"/>
@@ -131,6 +132,7 @@
 			</config>
 			<pods>
 				<pod name="Firebase/Messaging" spec="$IOS_FIREBASE_MESSAGING_VERSION"/>
+				<pod name="GoogleUtilities" spec="$IOS_GOOGLE_UTILITIES_VERSION"/>
 			</pods>
 		</podspec>
 	</platform>
